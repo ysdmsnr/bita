@@ -1,0 +1,7 @@
+ZERO = "http://creativecommons.org/publicdomain/zero/1.0/"
+BY = "http://creativecommons.org/licenses/by/4.0/"
+BY_SA = "http://creativecommons.org/licenses/by-sa/4.0/"
+BY_ND = "http://creativecommons.org/licenses/by-nd/4.0/"
+BY_NC = "http://creativecommons.org/licenses/by-nc/4.0/"
+BY_NC_SA = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+BY_NC_ND = "http://creativecommons.org/licenses/by-nc-nd/4.0/"
