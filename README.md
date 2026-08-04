@@ -5,11 +5,6 @@
 ```bash
 pip install bita
 ```
-## 使い方
-
-```python
-from bita import Manifest
-```
 
 ## ライセンス
 

@@ -6,15 +6,15 @@ class Profile:
         self,
         *,
         presentation_base_uri: str,
-        image_base_url: str,
+        image_base_uri: str,
         image_api_version: int,
         image_api_level: int,
-        search_base_url: str = "",
+        search_base_uri: str = "",
         search_api_version: int | None = None,
     ) -> None:
         if not presentation_base_uri:
             raise ValueError
-        if not image_base_url:
+        if not image_base_uri:
             raise ValueError
         if not image_api_version:
             raise ValueError
@@ -27,8 +27,8 @@ class Profile:
         if search_api_version and search_api_version not in (1, 2):
             raise ValueError
         self.presentation_base_uri = presentation_base_uri
-        self.image_base_url = image_base_url
+        self.image_base_uri = image_base_uri
         self.image_api_version = image_api_version
         self.image_api_level = image_api_level
-        self.search_base_url = search_base_url
+        self.search_base_uri = search_base_uri
         self.search_api_version = search_api_version

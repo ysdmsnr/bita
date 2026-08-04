@@ -31,7 +31,7 @@ class Builder:
         return f"{self.base_uri(identifier)}/range/{index}"
 
     def __image_id(self, image: Image) -> str:
-        base_uri = self.profile.image_base_url.removesuffix("/")
+        base_uri = self.profile.image_base_uri.removesuffix("/")
         return f"{base_uri}/{image.identifier}"
 
     def image_id(self, image: Image) -> str:
@@ -43,7 +43,7 @@ class Builder:
         return ""
 
     def search_id(self, identifier: str) -> str:
-        base_uri = self.profile.search_base_url.removesuffix("/")
+        base_uri = self.profile.search_base_uri.removesuffix("/")
         return f"{base_uri}/{identifier}/"
 
     def image_service(self, image: Image) -> dict:
