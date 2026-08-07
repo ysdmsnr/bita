@@ -1,6 +1,6 @@
 [project]
 name = "bita"
-version = "0.2.0"
+version = "0.2.1"
 description = "A simple Python library for creating IIIF Presentation API manifests"
 readme = "README.md"
 authors = [{ name = "ysdmsnr" }]

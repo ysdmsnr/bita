@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 from typing import TYPE_CHECKING
 
 from bita.model.canvas import Canvas
@@ -14,10 +13,6 @@ if TYPE_CHECKING:
 
 class V2Builder(Builder):
     CONTEXT = "http://iiif.io/api/presentation/2/context.json"
-
-    def search_id(self, identifier: str) -> str:
-        id_ = super().search_id(identifier)
-        return f"{id_}?q=v2_"
 
     def serialize(self, manifest: Manifest) -> dict:
         self.annotations = {}
